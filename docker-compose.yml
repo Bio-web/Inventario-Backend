@@ -29,14 +29,14 @@ services:
             - ./.env
         volumes:
             - ./data/mongo:/data/db
-    node:
-        image: node:latest
-        volumes:
-            - ./frontend:/opt/frontend
-        working_dir: /opt/frontend
-    nginx:
-        image: nginx:latest
-        volumes:
-            - ./frontend/build:/usr/share/nginx/html
-        ports:
-            - 8080:80
+#    node:
+#        image: node:latest
+#        volumes:
+#            - ./frontend:/opt/frontend
+#        working_dir: /opt/frontend
+#    nginx:
+#        image: nginx:latest
+#        volumes:
+#            - ./frontend/build:/usr/share/nginx/html
+#        ports:
+#            - 8080:80
